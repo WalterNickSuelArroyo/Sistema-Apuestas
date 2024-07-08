@@ -1,0 +1,62 @@
+/* MisApuestas.css */
+.mis-apuestas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header .selected {
+    color: orange;
+  }
+  
+  .right-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-header span {
+    margin-right: 20px;
+  }
+  
+  .right-header a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .right-header a:hover {
+    text-decoration: underline;
+  }
+  
+  .partidos-grid {
+    margin-top: 80px; /* Ajusta el margen superior para evitar que los partidos se superpongan con el header */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  

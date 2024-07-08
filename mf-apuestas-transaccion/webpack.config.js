@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:4002/",
+    publicPath: "http://localhost:4003/",
   },
 
   resolve: {
@@ -12,7 +12,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 4002,
+    port: 4003,
     historyApiFallback: true,
   },
 
@@ -41,11 +41,9 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "mf_partidos",
+      name: "mf_apuestas_transaccion",
       filename: "remoteEntry.js",
-      remotes: {
-        'components':'mf_header@http://localhost:4001/remoteEntry.js'
-      },
+      remotes: {},
       exposes: {},
       shared: {
         ...deps,
@@ -56,7 +54,7 @@ module.exports = (_, argv) => ({
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
-        }, 
+        },
       },
     }),
     new HtmlWebPackPlugin({

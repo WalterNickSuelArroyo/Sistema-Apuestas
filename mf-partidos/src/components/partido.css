@@ -1,0 +1,45 @@
+/* Partido.css */
+.partido-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .opcion {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .opcion:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .opcion.seleccionado {
+    background-color: orange;
+    color: white;
+  }
+  
+  button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ff7f00;
+  }
+  
